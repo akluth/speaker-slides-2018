@@ -3,3 +3,5 @@ PATH_TO_PRESENTATION_MANAGER=~/presentation-manager-rs
 
 cp -r * "${PATH_TO_PRESENTATION_MANAGER}/static/"
 mv ${PATH_TO_PRESENTATION_MANAGER}/static/*.css "${PATH_TO_PRESENTATION_MANAGER}/static/css/theme"
+mv ${PATH_TO_PRESENTATION_MANAGER}/static/templates/index.html.hbs ${PATH_TO_PRESENTATION_MANAGER}/templates
+rm -r ${PATH_TO_PRESENTATION_MANAGER}/static/templates
