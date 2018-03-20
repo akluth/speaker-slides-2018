@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ ! -d ~/presentation-manager-rs ]
+if [ ! -d ~/slideman ]
 then
   ./setup
 fi
 
 ./update
 
-cd ~/presentation-manager-rs
+cd ~/slideman
 exec zsh

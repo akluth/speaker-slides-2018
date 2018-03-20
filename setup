@@ -1,7 +1,7 @@
 #!/bin/bash
-PATH_TO_PRESENTATION_MANAGER=~/presentation-manager-rs
+PATH_TO_PRESENTATION_MANAGER=~/slideman
 
-git clone https://github.com/deralex/presentation-manager-rs $PATH_TO_PRESENTATION_MANAGER
+git clone https://github.com/deralex/slideman $PATH_TO_PRESENTATION_MANAGER
 
 rm -r "${PATH_TO_PRESENTATION_MANAGER}/static/slides"
 cp -r . "${PATH_TO_PRESENTATION_MANAGER}/static/"
@@ -9,4 +9,4 @@ mv ${PATH_TO_PRESENTATION_MANAGER}/static/*.css "${PATH_TO_PRESENTATION_MANAGER}
 
 cd "${PATH_TO_PRESENTATION_MANAGER}"
 cargo build
-mv target/debug/mybin ./presman
+mv target/debug/slideman ./slideman
