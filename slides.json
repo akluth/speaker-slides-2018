@@ -1,0 +1,23 @@
+[
+        {
+            "id": "1",
+            "file": "gpw2018-moose.md",
+            "title": "Muuuuuuuuh...oose?!",
+            "description": "Einfuehrung in Moose",
+            "style": "serif.css"
+        },
+        {
+            "id": "2",
+            "file": "gpw2018-big-data.md",
+            "title": "Data - Perl. Big Data - Java?",
+            "description": "Perl und Big Data - status quo und wo die Reise hingeht",
+            "style": "serif.css"
+        },
+        {
+            "id": "3",
+            "file": "webengdus-may-modern-perl.md",
+            "title": "Modern Perl and the modern web",
+            "description": "Back to the roots - building wonderful modern webapp in Perl",
+            "style": "serif.css"
+        }
+]
