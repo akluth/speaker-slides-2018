@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -d ~/presentation-manager-rs ]
+then
+  ./setup
+fi
+
+./update
+
+cd ~/presentation-manager-rs
+exec zsh
