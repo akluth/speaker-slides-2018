@@ -2,4 +2,4 @@
 PATH_TO_PRESENTATION_MANAGER=~/presentation-manager-rs
 
 cp -r * "${PATH_TO_PRESENTATION_MANAGER}/static/"
-mv "${PATH_TO_PRESENTATION_MANAGER}/static/serif.css" "${PATH_TO_PRESENTATION_MANAGER}/static/css/theme"
+mv ${PATH_TO_PRESENTATION_MANAGER}/static/*.css "${PATH_TO_PRESENTATION_MANAGER}/static/css/theme"

@@ -1,9 +1,19 @@
-# Slide 1
+## Muuuuuuuuh...oose?!
+#### Einführung in Moose - einer Erweiterung des Perl Object Systems
 
 ---
 
-## Slide 2
+### Postmodern und tre chic - die Agenda
 
 ---
 
-### Slide 3
+* Was ist Moose_?
+* Perl und OOP - damals
+* Perl und OOP - postmodern
+* Let's go deeper!
+* "Darf ich eine Frage stellen_?" - so meta
+* (Der krönende) Abschluss
+
+---
+
+
