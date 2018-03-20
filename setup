@@ -1,0 +1,12 @@
+#!/bin/bash
+PATH_TO_PRESENTATION_MANAGER=~/presentation-manager-rs
+
+git clone https://github.com/deralex/presentation-manager-rs $PATH_TO_PRESENTATION_MANAGER
+
+rm -r "${PATH_TO_PRESENTATION_MANAGER}/static/slides"
+cp -r . "${PATH_TO_PRESENTATION_MANAGER}/static/"
+mv "${PATH_TO_PRESENTATION_MANAGER}/static/serif.css" "${PATH_TO_PRESENTATION_MANAGER}/static/css/theme"
+
+cd "${PATH_TO_PRESENTATION_MANAGER}"
+cargo build
+mv target/debug/mybin ./presman
