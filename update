@@ -1,5 +1,5 @@
 #!/bin/bash
 PATH_TO_PRESENTATION_MANAGER=~/presentation-manager-rs
 
-cp -r . "${PATH_TO_PRESENTATION_MANAGER}/static/"
+cp -r * "${PATH_TO_PRESENTATION_MANAGER}/static/"
 mv "${PATH_TO_PRESENTATION_MANAGER}/static/serif.css" "${PATH_TO_PRESENTATION_MANAGER}/static/css/theme"
