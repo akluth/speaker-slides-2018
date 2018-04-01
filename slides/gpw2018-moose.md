@@ -1,32 +1,74 @@
 ## Muuuuuuuuh...oose?!
-#### Einführung in Moose - einer Erweiterung des Perl Object Systems
+#### An introduction to Moose - the Extension of the Perl Object System
 
 ---
 
-### Postmodern und tre chic 
-### - die Agenda
+### Postmodern and tre chic
+### - the agenda
 
 ---
 
-* Was ist Moose_?
-* Perl und OOP - damals
-* Perl und OOP - postmodern
+* OOP before and after Moose
+* What is Moose?
 * Let's go deeper!
-* "Darf ich eine Frage stellen_?" - so meta
-* (Der krönende) Abschluss
+* "May I ask a question?" - so meta
+* Conclusion
 
 ---
 
 ### Alexander Kluth
 #### Lead Developer & SRE
-#### NEXUS Netsoft Group
+### Nexus Netsoft Group
 
-* 26 Jahre alt
-* verheiratet mit der tollsten Frau der Welt
+* 26 years old
+* Married to the most wonderful girl in the world
 * 95% PHP, 5% Perl @ Work
-* Co-Maintainer CGI.pm
-* YAPH, Rust-Enthusiast, "junger C-Veteran"
+* Co maintainer CGI.pm
+* YAPH, Rust enthusiast, "young C veteran"
 
 ---
 
+## Perl and OOP - back then
 
+---
+
+There were times...
+
+People used to write code like
+  
+...this:
+
+---
+
+```
+package Rocket;
+
+sub new {
+    my ($class, %param) = @_;
+    my $object = bless ({'v' => $param{speed} }, $class);
+    return $object;
+}
+
+sub stop {
+    my ($object) = shift;
+    $object->{'v'} = 0;
+}
+```
+
+---
+
+Today it's more like...
+
+---
+
+```
+package UFO;
+use Moose;
+
+has 'speed' => (is => 'rw');
+
+sub stop {
+    my ($object) = shift;
+    $object->speed(0);
+}
+```
